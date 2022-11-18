@@ -12,5 +12,5 @@ run on commands in the terminal:
 - npm install cypress --save-dev
 
 ## Tests
-- In package.json file, ad the line  "open:cypress open"
+- In package.json file, add the line  "open:cypress open"
 - Run the command "npm run open"
