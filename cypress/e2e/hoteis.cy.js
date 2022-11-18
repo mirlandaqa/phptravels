@@ -3,7 +3,7 @@ describe('Buscar hoteis para viagem', () => {
             cy.visit('https://phptravels.net/')
         })
 
-
+        
         it.only('Pesquisar hoteis', () =>{
 
             //Selecionar cidade
