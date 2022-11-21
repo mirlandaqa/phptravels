@@ -2,16 +2,19 @@ describe('Buscar hoteis para viagem', () => {
         beforeEach(()=>{
             cy.visit('https://phptravels.net/')
         })
-
         
-        it.only('Pesquisar hoteis', () =>{
+        it('Pesquisar hoteis', () =>{
+
+            //Essa linha muda da aba 'Voos' para 'Hotel'. Essa ação foi feita para mostrar a aba hotel com conteúdo correto
+            cy.get('button[id="flights-tab"]').click({force:true})
+            cy.get('#hotels-tab').click({force:true})
 
             //Selecionar cidade
             cy.get('[aria-labelledby="select2-hotels_city-container"]').click({force:true})
             cy.get('.select2-search__field').type('Capri')
             cy.scrollTo('top') //Voltar página para o topo
             cy.wait(14000)
-            cy.contains('Capri,Italy').click()
+            cy.contains('Capri,Italy').click({force:true})
             cy.scrollTo('top')
             cy.get('span').contains('Capri,Italy').should('be.visible')
 
