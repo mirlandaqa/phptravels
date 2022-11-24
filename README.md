@@ -1,5 +1,5 @@
 # PHP travels (Automation project)
-This is a test automation project using the Cypress framework. 
+This is a WEB test automation project using the Cypress framework. 
 
 ## Development
 To start the development, it should to clone this project on Github for a local directory in computer. 
