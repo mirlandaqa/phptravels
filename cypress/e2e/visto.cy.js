@@ -1,3 +1,5 @@
+
+//Legado
 describe('Buscar visto', () => {
 
     beforeEach(()=>{
@@ -7,6 +9,7 @@ describe('Buscar visto', () => {
     })
 
     it('Buscar visto', ()=>{
+
         cy.get('#visa-tab').click({force:true})
         
     })

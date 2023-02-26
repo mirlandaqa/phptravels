@@ -1,7 +1,7 @@
 describe ('Buscar transfers', () =>  {
 
     beforeEach(() => {
-        cy.visit('https://phptravels.net/')
+        cy.visit('https://phptravels.net')
         cy.get('button[id="flights-tab"]').click({force:true})
         cy.get('#cars-tab').click({force:true})
 
